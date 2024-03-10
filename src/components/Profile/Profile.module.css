@@ -1,0 +1,44 @@
+.profile {
+  margin: 0 auto;
+  padding-top: 20px;
+  width: 300px;
+  border-radius: 10px;
+  background-color: rgb(218, 218, 200);
+}
+.blockProf {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  padding-bottom: 20px;
+}
+.foto {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  background-color: rgb(114, 101, 101);
+}
+.avatar {
+  font-size: 20px;
+  font-weight: bold;
+}
+.linkProf {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  background-color: rgb(105, 85, 85);
+}
+.listProf {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 20px;
+  border: 2px solid rgb(58, 56, 56);
+  font-size: medium;
+  font-size: 18px;
+}
+.quantity {
+  font-size: 20px;
+  font-weight: bold;
+}

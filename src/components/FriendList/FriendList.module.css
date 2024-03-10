@@ -1,0 +1,30 @@
+.listFriend {
+  display: flex;
+  gap: 10px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  justify-content: center;
+}
+.linkFriend {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 10px;
+  align-items: center;
+  border: 2px solid rgb(58, 56, 56);
+  border-radius: 10px;
+}
+.avatar {
+  min-width: 60px;
+  min-height: 60px;
+}
+.nameFr {
+  font-size: 20px;
+  font-weight: bold;
+}
+.oncolor {
+  color: green;
+}
+.offcolor {
+  color: red;
+}

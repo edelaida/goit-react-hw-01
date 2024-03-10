@@ -1,21 +1,29 @@
+import s from "./TransactionHistory.module.css";
+import clsx from "clsx";
+
 const TransactionHistory = ({ items }) => {
   return (
-    <table>
-      <thead>
+    <table className={s.tablBlock}>
+      <thead className={s.title}>
         <tr>
-          <th>Type</th>
-          <th>Amount</th>
-          <th>Currency</th>
+          <th className={s.titlename}>Type</th>
+          <th className={s.titlename}>Amount</th>
+          <th className={s.titlename}>Currency</th>
         </tr>
       </thead>
 
       <tbody>
         {items.map((user) => {
           return (
-            <tr key={user.id}>
-              <td>{user.type} </td>
-              <td>{user.amount}</td>
-              <td>{user.currency}</td>
+            <tr
+              key={user.id}
+              className={clsx(s.line, {
+                [s.linebl]: user.id % 2 === 0,
+              })}
+            >
+              <td className={s.itemname}>{user.type} </td>
+              <td className={s.itemname}>{user.amount}</td>
+              <td className={s.itemname}>{user.currency}</td>
             </tr>
           );
         })}
