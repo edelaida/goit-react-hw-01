@@ -19,3 +19,6 @@
 .itemname {
   text-align: center;
 }
+.row:nth-of-type(even) {
+  background-color: grey;
+}

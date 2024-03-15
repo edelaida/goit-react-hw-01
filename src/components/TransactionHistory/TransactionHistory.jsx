@@ -12,15 +12,10 @@ const TransactionHistory = ({ items }) => {
         </tr>
       </thead>
 
-      <tbody>
+      <tbody className={s.row}>
         {items.map((user) => {
           return (
-            <tr
-              key={user.id}
-              className={clsx(s.line, {
-                [s.linebl]: user.id % 2 === 0,
-              })}
-            >
+            <tr key={user.id} className={s.row}>
               <td className={s.itemname}>{user.type} </td>
               <td className={s.itemname}>{user.amount}</td>
               <td className={s.itemname}>{user.currency}</td>
@@ -33,3 +28,8 @@ const TransactionHistory = ({ items }) => {
 };
 
 export default TransactionHistory;
+
+// key={user.id}
+//               className={clsx(s.line, {
+//                 [s.linebl]: user.id % 2 === 0,
+//               })}
